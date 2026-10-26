@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AJ Arcade Labs</title>
+<meta name="description" content="AJ Arcade Labs makes small, original mobile arcade games. First game: Rooftop Rescue: Don't Fall!">
+<link rel="icon" href="rooftop-rescue/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Barlow+Condensed:wght@500;700&display=swap">
+<style>
+  /* One column: studio name, then one card per game. Single dusk look, matching the games. */
+  :root {
+    --night: #120d24; --panel: #1c1534; --ink: #f4efe6; --muted: #b9b2c8; --sun: #ff8a5b; --ok: #5cf0b0;
+    --display: 'Bungee', 'Arial Black', Impact, sans-serif;
+    --body: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: linear-gradient(180deg, var(--night), #2a1748 70%, #4a2350); min-height: 100vh; color: var(--ink); font: 500 19px/1.5 var(--body); }
+  main { max-width: 760px; margin: 0 auto; padding: 56px max(16px, env(safe-area-inset-left, 0px)) 64px; display: flex; flex-direction: column; gap: 32px; }
+  h1 { font: 44px/1 var(--display); margin: 0; color: var(--sun); letter-spacing: 0.01em; }
+  .lede { margin: 8px 0 0; color: var(--muted); font-size: 21px; max-width: 34em; }
+  .game { background: var(--panel); border: 2px solid rgba(244, 239, 230, 0.12); border-radius: 20px; overflow: hidden; }
+  .game img.banner { display: block; width: 100%; height: auto; max-width: 100%; }
+  .info { padding: 20px 22px 24px; display: flex; gap: 18px; align-items: flex-start; }
+  .info img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .info h2 { font: 24px/1.15 var(--display); margin: 2px 0 6px; text-wrap: balance; }
+  .info p { margin: 0 0 12px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; }
+  a { color: var(--ok); font-weight: 700; }
+  .badge { display: inline-block; font: 700 15px/1 var(--body); letter-spacing: 0.06em; text-transform: uppercase; color: var(--night); background: var(--ok); padding: 6px 10px; border-radius: 99px; }
+  footer { color: var(--muted); font-size: 16px; border-top: 1px solid rgba(244, 239, 230, 0.12); padding-top: 18px; }
+  @media (max-width: 480px) { h1 { font-size: 34px; } .info { flex-direction: column; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AJ ARCADE LABS</h1>
+    <p class="lede">Small, original arcade games for your phone. Quick to learn, hard to put down.</p>
+  </header>
+
+  <article class="game">
+    <img class="banner" src="rooftop-rescue/feature.png" alt="Rooftop Rescue: a runner leaps between city rooftops at dusk" width="1024" height="500">
+    <div class="info">
+      <img src="rooftop-rescue/icon.png" alt="Rooftop Rescue app icon" width="72" height="72">
+      <div>
+        <span class="badge">Coming soon to Google Play</span>
+        <h2>Rooftop Rescue: Don't Fall!</h2>
+        <p>He won't stop running, so you move the city. Drag buildings up and down, flick water tanks, drop planks and stop wrecking balls across 100 levels in 5 cities.</p>
+        <div class="links">
+          <a href="rooftop-rescue/privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    Contact: <a href="mailto:ajaykumarnel@gmail.com">ajaykumarnel@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
